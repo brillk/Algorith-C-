@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// split이 없기에 따로 만들어봤다
+
 vector<string> split(string input, string delimeter) {
 	
 	vector<string> ret;
@@ -17,9 +19,9 @@ vector<string> split(string input, string delimeter) {
 	return ret;
 }
 int main(){
-	string s = "���� ��̴ٸ� ok�Դϴ�~";
-	string d = " ";
-	vector<string> a = split(s, d);
+	string sentence = "뭐든 즐겁다면 ok입니다~";
+	string divider = " ";
+	vector<string> a = split(sentence, divider);
 	for(string b : a)
 		cout << b << "\n";
 }
